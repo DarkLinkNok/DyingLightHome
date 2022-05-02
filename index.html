@@ -9,7 +9,6 @@
 <head>
 	<title>林克 DyingLight Home</title>
 	<link rel="icon" href="头像.ico">
-	<link rel="stylesheet" type="text/css" href="index.css"/>
 	<meta charset="utf-8" />
 
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
@@ -24,24 +23,43 @@
 </head>
 
 <body>
-<div class="container">
-			<div class="line" style="--color:#ec3e27;--x:3;--z:3;--d:1;"></div>
-			<div class="line" style="--color:#fff;--x:3;--z:2;--d:2;"></div>
-			<div class="line" style="--color:#fff;--x:4;--z:1;--d:3;"></div>
-			<div class="line" style="--color:#fd79a8;--x:4;--z:0;--d:1;"></div>
-			<div class="line" style="--color:#fff;--x:6;--z:-1;--d:2;"></div>
-			<div class="line" style="--color:#0984e3;--x:6;--z:-2;--d:3;"></div>
-			<div class="line" style="--color:#fff;--x:8;--z:-3;--d:1;"></div>
-			<div class="line" style="--color:#fff;--x:10;--z:-4;--d:2;"></div>
-			<div class="line" style="--color:#fff;--x:12;--z:-5;--d:3;"></div>
-			<div class="line" style="--color:#fff;--x:14;--z:-6;--d:1;"></div>
-			<div class="line" style="--color:#fff;--x:16;--z:-7;--d:2;"></div>
-			<div class="line" style="--color:#fff;--x:18;--z:-8;--d:3;"></div>
-			<div class="line" style="--color:#e056fd;--x:20;--z:-9;--d:1;"></div>
+    <div class="container">
+        <svg
+            width="2800"
+            height="1200"
+            class="text">
+            <defs>
+                <linearGradient id="geekColor" gradientTransform="rotate(90)">
+                    <stop offset="0%" stop-color="#91bd3a">
+                        <animate
+                        attributeName="stop-color"
+                        values="#91bd3a;#12cad6;#91bd3a"
+                        dur="20s"
+                        begin="30s"
+                        repeatCount="indefinite"
+                        ></animate>
+                    </stop>
+                    <stop offset="500%" stop-color="#12cad6">
+                        <animate
+                        attributeName="stop-color"
+                        values="#12cad6;#91bd3a;#12cad6"
+                        dur="20s"
+                        begin="30s"
+                        repeatCount="indefinite"
+                        ></animate>
+                    </stop>
+                    
+                </linearGradient>
+            </defs>
+            <text class="logo_text"
+                x="80"
+                y="200">
+                Link's Dying Light Home
+            </text>
+        </svg>
+    </div>
+</body>
 
-			
-		</div>
-<body>		
 <body class="is-preload">
 	<div id="wrapper">
 		<div id="bg"></div>
@@ -52,7 +70,7 @@
 			<header id="header">
 				<h1>林克</h1>
 				<p>&nbsp;&bull;&nbsp;DyingLight三皇五帝之Our Name : Ctk 雨季 Link Way 电网污染受害者 &nbsp;&bull;&nbsp;</p >
-				<p>不智齿白嫖怪ddos 群内有：EEE QAQ 24岁 开心焯人等众多大神！ 进群多活跃</p >
+				<p>群内大神：EEE QAQ 开心焯人 CTT 奶牛 洛琪希 早爱 老铁 半砖 24岁 	狗子等人</p >
 				<p>&nbsp;&bull;&nbsp;内置①群:436478119|内置②群:1017830017||魔改①群:962881032|外置①群:975952282&nbsp;&bull;&nbsp;</p >
 				<nav>
 					<ul>
@@ -113,5 +131,9 @@ audio.display();
 		disable-menu='false'></script>
 <script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js"></script>	
 <script id="xplayer" src="https://music.xfyun.club/Static/player/player.js" key="626e82488c1f9" m="1"></script>
+    <script src="https://www.luckyclover.top/rain.js"></script>
+    <script>Rain({speed:[5,10],hasBounce:true,wind_direction:150,gravity:0.05,maxNum:100,numLevel:5,drop_chance:0.45,cloud:true});</script>
+
 </body>
+
 </html>
